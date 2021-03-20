@@ -6,6 +6,8 @@ cmake_minimum_required(VERSION 3.18)
 # compile flags and setting global hardened link flags.
 
 if (APPLE)
+INCLUDE_DIRECTORIES(/opt/local/include)
+LINK_DIRECTORIES(/opt/local/lib)
 set (CMAKE_OSX_DEPLOYMENT_TARGET "10.14" CACHE STRING
     "Minimum OS X deployment version" FORCE)
 endif()
