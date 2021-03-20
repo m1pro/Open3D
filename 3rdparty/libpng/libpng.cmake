@@ -24,6 +24,7 @@ ExternalProject_Add(
         -DPNG_EXECUTABLES=OFF
         -DPNG_TESTS=OFF
         -DPNG_BUILD_ZLIB=ON # Prevent libpng from calling find_pacakge(zlib).
+        -DPNG_ARM_NEON=on
         -DZLIB_INCLUDE_DIR=${ZLIB_INCLUDE_DIRS}
     BUILD_BYPRODUCTS
         <INSTALL_DIR>/${Open3D_INSTALL_LIB_DIR}/${CMAKE_STATIC_LIBRARY_PREFIX}${lib_name}${CMAKE_STATIC_LIBRARY_SUFFIX}
